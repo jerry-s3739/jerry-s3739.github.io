@@ -30,7 +30,7 @@ function displayFavourite(){
             <div class="card_footer">
             <h3>${i.strMeal}</h3>
             <p>Category: ${i.strCategory}</p>
-            <button class="addToFavBtn" onclick ="moreDetail(${i.idMeal})">More Details</button>
+            <button class="addToFavBtn" onclick ="moreDetailPage(${i.idMeal})">More Details</button>
             </div>
         </div>`
           document.querySelector('.products').append(prod);
