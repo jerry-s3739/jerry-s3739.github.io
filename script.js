@@ -63,6 +63,7 @@ async function moreDetailPage(id){
 }
 
 async function populateProduct(){
+    document.getElementById("products").innerHTML = "";
     let mealName = document.getElementById('search').value;
     let product = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`);
     product = await product.json();
